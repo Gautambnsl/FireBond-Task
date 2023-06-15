@@ -3,7 +3,7 @@ import detectEthereumProvider from "@metamask/detect-provider";
 import { ethers } from "ethers";
 import abi from "./abi.json"
 
-const contractAddress = "0x2e84156979181F7B7C7eb276c79a8655E1d650C1";
+const contractAddress = "0xeeCdcBdA70fF74D3b8B3117aDb6FBf3f6038F880";
 
 export async function connectWallet() {
 	try {
