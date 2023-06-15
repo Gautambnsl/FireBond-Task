@@ -1,0 +1,201 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_teamA",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_teamB",
+				"type": "string"
+			}
+		],
+		"name": "createMatch",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_totalRounds",
+				"type": "uint256"
+			}
+		],
+		"name": "initialize",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "reset",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_matchId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_teamAScore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_teamBScore",
+				"type": "uint256"
+			}
+		],
+		"name": "updateMatchResult",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "currentMatchId",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "currentRound",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getBracketState",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "matchId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "round",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "teamA",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "teamB",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "teamAScore",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "teamBScore",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isFinished",
+						"type": "bool"
+					}
+				],
+				"internalType": "struct TournamentBracket.Match[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "matches",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "matchId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "round",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "teamA",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "teamB",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "teamAScore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "teamBScore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "isFinished",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalRounds",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
